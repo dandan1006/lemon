@@ -6,6 +6,7 @@
 		<title>首页</title>
 		<link href="css/mui.min.css" rel="stylesheet" />
 		<link rel="stylesheet" href="css/index.css">
+		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/mui.picker.css">
 		<link rel="stylesheet" href="css/mui.poppicker.css">
 		<link rel="stylesheet" href="css/mui.dtpicker.css">
@@ -14,9 +15,31 @@
 		<div class="mui-off-canvas-wrap mui-draggable mui-slide-in">
 			<!-- 菜单容器 -->
 			<aside class="mui-off-canvas-left">
-				<div class="mui-scroll-wrapper">
+				<div class="mui-scroll-wrapper aside">
 					<div class="mui-scroll">
 						<!-- 菜单具体展示内容 -->
+						<h1>收支类型</h1>
+						<ul>
+							<li>全部支出</li>
+							<li>全部收入</li>
+						</ul>
+						<h1>收支分类</h1>
+						<ul>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+							<li>购物</li>
+						</ul>
 						<button type="button" class="mui-btn mui-btn-royal close-aside">关闭侧边栏</button>
 					</div>
 				</div>
@@ -50,47 +73,95 @@
 						<span class="mui-icon mui-icon-star"></span>
 					</div>
 					<div class="content">
+						<!-- 按账单显示 -->
 						<div class="bill-wrap">
 							<div class="mui-scroll-wrapper">
 								<div class="mui-scroll">
-									<div class="day-item">
-										<div class="day-title">
-											<div>
-												<span class="mui-icon mui-icon-phone"></span>
-												10月-10
+									<div class="month-wrap">
+										<div class="day-item">
+											<div class="day-title">
+												<div>
+													<span class="mui-icon mui-icon-phone"></span>
+													10月-10
+												</div>
+												<div>
+													花费
+													10月-10
+												</div>
 											</div>
-											<div>
-												花费
-												10月-10
-											</div>
+											<ul id="OA_task_2" class="mui-table-view">
+												<li class="mui-table-view-cell">
+													<div class="mui-slider-right mui-disabled">
+														<a class="mui-btn mui-btn-red">删除</a>
+													</div>
+													<div class="mui-slider-handle mui-table">
+														<div>
+															<span class="mui-icon mui-icon-phone y-bg"></span>
+															住宿
+														</div>
+														<div class="red">
+															85.00
+														</div>
+													</div>
+												</li>
+											</ul>
 										</div>
-										<ul id="OA_task_2" class="mui-table-view">
-											<li class="mui-table-view-cell">
-												<div class="mui-slider-right mui-disabled">
-													<a class="mui-btn mui-btn-red">删除</a>
-												</div>
-												<div class="mui-slider-handle mui-table">
-													<div>
-														<span class="mui-icon mui-icon-phone"></span>
-														住宿
-													</div>
-													<div class="red">
-														85.00
-													</div>
-												</div>
-											</li>
-										</ul>
 									</div>
-
+									<div class="year-wrap none">
+										<div class="month-item">
+											<ul class="mui-table-view">
+												<li class="mui-table-view-cell mui-collapse">
+													<a class="mui-navigate-right" href="#">
+														<ul class="m-title">
+															<li>
+																<span class="mui-icon mui-icon-phone"></span>
+																<span>10月</span>
+															</li>
+															<li class="red">
+																<span>话费</span>
+																<span>215</span>
+															</li>
+															<li class="green">
+																<span>收入</span>
+																<span>215</span>
+															</li>
+															<li class="gray">
+																<span>结余</span>
+																<span>215</span>
+															</li>
+														</ul>
+													</a>
+													<div class="mui-collapse-content">
+														<ul id="OA_task_2" class="mui-table-view">
+															<li class="mui-table-view-cell">
+																<div class="mui-slider-right mui-disabled">
+																	<a class="mui-btn mui-btn-red">删除</a>
+																</div>
+																<div class="mui-slider-handle mui-table">
+																	<div>
+																		<span class="mui-icon mui-icon-phone y-bg"></span>
+																		住宿
+																	</div>
+																	<div class="red">
+																		85.00
+																	</div>
+																</div>
+															</li>
+														</ul>
+													</div>
+												</li>
+											</ul>
+										</div>
+									</div>
 								</div>
 							</div>
-
 						</div>
 						<div class="table-wrap none">
 							<div id="main" style="width:300px;height:300px;"></div>
 						</div>
 					</div>
 				</div>
+				<!-- 底部 -->
 				<nav class="mui-bar mui-bar-tab">
 					<a class="mui-tab-item mui-active" href="#tabbar">
 						<span class="mui-icon mui-icon-home"></span>
@@ -111,6 +182,9 @@
 				</nav>
 				<div class="mui-off-canvas-backdrop mark"></div>
 			</div>
+		</div>
+		<div class="go-bill">
+			<span class="mui-icon mui-icon-plus"></span>
 		</div>
 	</body>
 	<script src="js/libs/require.js" data-main="./js/page/index.js"></script>

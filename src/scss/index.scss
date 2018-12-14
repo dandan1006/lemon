@@ -88,9 +88,83 @@ header{
 	.mui-slider-handle{
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 	}
 }
 
+.m-title{
+	width: 100%;
+	height: 44px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-right: 40px;
+	span{
+		display: block;
+		font-size: 12px;
+		text-align: center;
+	}
+	li:nth-child(1){
+		span{
+			display: inline-block;
+		}
+	}
+}
+.mui-table-view-cell.mui-collapse .mui-table-view .mui-table-view-cell{
+	padding-left: 15px;
+}
+//侧边栏
+.aside{
+	background: white;
+	padding: 10px;
+	h1{
+		font-size: 18px;
+		border-left: 2px solid yellow;
+		padding-left: 10px;
+	}
+	ul{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 20px;
+			li{
+				border:1px solid gray;
+				color: gray;
+				padding: 2px 6px;
+				margin-top: 10px;
+				margin-right: 10px;
+				border-radius: 50px;
+				font-size: 12px;
+			}
+	}
+	
+}
+.go-bill{
+	width: 80px;
+	height: 80px;
+	box-shadow: 0 0 4px #000;
+	border-radius: 50%;
+	text-align: center;
+	line-height: 80px;
+	position: absolute;
+	bottom: 50px;
+	left: 50%;
+	margin-left: -40px;
+	z-index: 99;
+	.mui-icon{
+		font-size: 80px;
+	}
+}
+.y-bg{
+	padding: 10px;	
+	background: yellow;
+	border-radius: 50%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
 .red{
 	color: red;
 }
