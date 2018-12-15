@@ -1,8 +1,27 @@
-body {
-  background: white; }
-
-.mui-bar-nav {
-  text-align: center; }
+header {
+  width: 100%;
+  height: 100px;
+  background: yellow; }
+  header .header-t {
+    width: 100%;
+    text-align: center; }
+    header .header-t .mui-icon-back {
+      width: 44px;
+      height: 44px;
+      text-align: center;
+      line-height: 44px;
+      position: absolute;
+      top: 0;
+      left: 0; }
+  header .ipt-money {
+    margin: 0 15px;
+    height: 44px;
+    line-height: 44px;
+    border-bottom: 1px solid gray;
+    text-align: center; }
+    header .ipt-money span {
+      border-right: 1px solid gray;
+      font-size: 20px; }
 
 .tab-list {
   border: 1px solid black;
@@ -14,7 +33,8 @@ body {
     font-size: 12px;
     padding: 10px; }
     .tab-list span.active {
-      background: yellow; }
+      background: #000;
+      color: yellow; }
 
 .swiper {
   width: 100%;

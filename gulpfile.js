@@ -4,7 +4,13 @@ var sass=require('gulp-sass');
 gulp.task('server',function(){
 	return gulp.src('src')
 	.pipe(server({
-		port:8888
+		port:8888,
+		proxies:[
+			{
+				source:'/classify/api/selectIcon',
+				target:'http://localhost:3000/classify/api/selectIcon'
+			}
+		]
 	}))
 })
 gulp.task('devScss',function(){
